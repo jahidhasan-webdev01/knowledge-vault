@@ -11,6 +11,18 @@
     text-align: center;
 }
 
+.text-green {
+    color: rgba(70, 145, 101, 1);
+}
+
+.text-black {
+    color: rgba(0, 25, 49, 1);
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
 /* Common styles */
 .container {
     max-width: 1360px;
@@ -47,7 +59,14 @@
     background: none;
 }
 
-.notes-section {
+.tag {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.notes-section,
+.solution-section {
     margin-top: 120px;
 }
 
@@ -130,4 +149,23 @@ ul li a {
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
+}
+
+/* Solution section */
+.solution-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: flex-start;
+}
+
+.tags-area {
+    margin-top: 40px;
+}
+
+.tags-area .tag-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 6px;
 }
