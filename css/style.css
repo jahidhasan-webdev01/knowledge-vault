@@ -6,10 +6,19 @@
     font-optical-sizing: auto;
 }
 
+/* Additional classes */
+.text-center {
+    text-align: center;
+}
+
 /* Common styles */
 .container {
     max-width: 1360px;
     margin: 0 auto;
+}
+
+.logo {
+    cursor: pointer;
 }
 
 .btn {
@@ -27,8 +36,34 @@
     background-color: rgba(70, 145, 101, 1);
 }
 
+.btn-success:hover {
+    color: rgba(70, 145, 101, 1);
+    border: 1px solid rgba(70, 145, 101, 1);
+    background: none;
+}
+
 .btn-outline {
     border: 1px solid rgba(255, 255, 255, 1);
+    background: none;
+}
+
+.notes-section {
+    margin-top: 120px;
+}
+
+.section-heading {
+    color: rgba(0, 25, 49, 1);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    margin-bottom: 16px;
+}
+
+.text-secondary {
+    color: rgba(98, 115, 130, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 /* Navbar */
@@ -55,4 +90,44 @@ ul li a {
     font-size: 16px;
     font-weight: 500;
     opacity: 0.9;
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url(../assets/hero-bg.png);
+    max-width: 2042px;
+    max-width: 1363px;
+    background-repeat: no-repeat;
+}
+
+/* Notes section */
+.note-cards-area {
+    margin-top: 44px;
+    display: flex;
+    gap: 24px;
+}
+
+.note-cards-area .note-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.06);
+}
+
+.note-card img {
+    background-color: rgba(249, 85, 85, 1);
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.note-card h2 {
+    color: rgba(0, 25, 49, 1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
 }
