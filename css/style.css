@@ -23,6 +23,10 @@
     margin-bottom: 16px;
 }
 
+.mb-24 {
+    margin-bottom: 24px;
+}
+
 /* Common styles */
 .container {
     max-width: 1360px;
@@ -42,9 +46,12 @@
     font-weight: 600;
     line-height: 19px;
     cursor: pointer;
+    display: flex;
+    gap: 10px;
 }
 
 .btn-success {
+    border: 1px solid rgba(70, 145, 101, 1);
     background-color: rgba(70, 145, 101, 1);
 }
 
@@ -66,7 +73,9 @@
 }
 
 .notes-section,
-.solution-section {
+.solution-section,
+.early-access-section,
+footer {
     margin-top: 120px;
 }
 
@@ -168,4 +177,24 @@ ul li a {
     align-items: center;
     margin-bottom: 16px;
     gap: 6px;
+}
+
+/* Early access section */
+.early-access-section {
+    background-color: rgba(247, 246, 242, 1);
+    border-radius: 12px;
+    padding: 80px 40px;
+}
+
+.early-access-section div {
+    display: flex;
+    justify-content: center;
+}
+
+.section-heading-sm {
+    color: rgba(0, 25, 49, 1);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 16px;
 }
