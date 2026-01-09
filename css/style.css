@@ -47,6 +47,8 @@
     line-height: 19px;
     cursor: pointer;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -64,6 +66,12 @@
 .btn-outline {
     border: 1px solid rgba(255, 255, 255, 1);
     background: none;
+}
+
+.btn-outline:hover {
+    color: rgba(0, 25, 49, 1);
+    border: 1px solid rgba(0, 25, 49, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .tag {
@@ -123,9 +131,66 @@ ul li a {
 /* Hero section */
 .hero-section {
     background-image: url(../assets/hero-bg.png);
-    max-width: 2042px;
-    max-width: 1363px;
+    width: 100%;
+    min-height: 90vh;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .higlight-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: none;
+    border-radius: 1000px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 8px 20px;
+    color: rgba(70, 145, 101, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.hero-section .higlight-button button:hover {
+    text-decoration: underline;
+}
+
+.hero-section .text-theam {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.text-theam-white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.text-theam-green {
+    color: rgba(48, 184, 104, 1);
+}
+
+.hero-section .text-theam-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.hero-section .buttons {
+    display: flex;
+    gap: 16px;
 }
 
 /* Notes section */
@@ -186,9 +251,9 @@ ul li a {
     padding: 80px 40px;
 }
 
-.early-access-section div {
-    display: flex;
-    justify-content: center;
+.btn-center {
+    display: inline-block;
+    text-align: center;
 }
 
 .section-heading-sm {
